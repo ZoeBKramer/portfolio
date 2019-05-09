@@ -1,0 +1,321 @@
+body{
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0;
+	width: 100vw;
+}
+
+h1 {
+	color: #ffa283;
+	font-size: 50px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+h2 {
+	color: white;
+	font-size: 18px;
+	margin-top: 0;
+}
+.bio {
+	color: white;
+	font-size: 20px;
+}
+.me {
+	height: 150px;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: white;
+	margin-top: 40px;
+}
+.about {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.line {
+	height: 3px;
+	background-color: #ffa283;
+	border: none;
+	width: 50px;
+}
+
+.about-container {
+	background: url('../images/background1.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+h3 {
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 100px;
+}
+
+.line2 {
+	border-top: 5px double #ffa283;
+	width: 250px;
+}
+
+.box {
+	float: left;
+	width: 42.5%;
+	margin-left: 5%;
+	margin-top: 80px;
+}
+
+.clear {
+	clear: both;
+}
+
+h4 {
+	text-align: center;
+	font-size: 24px;
+}
+
+p{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.skills-and-tools {
+	font-family: 'Josefin Sans', sans-serif;
+	max-width: 400px;
+	margin: 40px auto;
+}
+
+.icons {
+	text-align: center;
+}
+
+.icon {
+	margin: 30px 0;
+}
+
+.contact-me {
+	height: 350px;
+	background-color: #202020;
+	padding-top: 30px;
+}
+
+.contact-headline {
+	color: white;
+	margin-top: 30px;
+}
+
+.line2 {
+	border-top: 5px double #ffa283;
+	width: 250px;
+	border-bottom: none;
+	border-right: none;
+}
+
+.contact-info {
+	color: white;
+	font-size: 13px;
+	margin-top: 30px;
+}
+
+.contact-link {
+	color: #ffa283;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 5px;
+}
+
+.nav-link {
+	color: #ffa283;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+li {
+	display: inline-block;
+	font-size: 12px;
+	width: 100px;
+	font-weight: bold;
+	margin-top: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	margin-left: 30px;
+}
+
+.hire-me {
+	border-style: solid;
+	border-color: #ffa283;
+}
+
+.web-apps-container {
+	background: url('../images/background1.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover!important;
+	-moz-background-size: cover!important;
+	-o-background-size: cover!important;
+	background-size: cover!important;
+	width: 100%;
+	overflow: hidden;
+	color: white;
+}
+
+.githublink {
+	color: #ffa283;
+	text-decoration: none;
+}
+
+/* Mobile (Android) */
+@media only screen and (max-width: 731px){
+	.about-container{
+		background: url('../images/background1.jpg') no-repeat center center fixed;
+	}
+
+	.web-apps-container {
+	background: #006574;
+	}
+
+	pre {
+		overflow-x: scroll;
+	}
+	
+
+	.box {
+		width: 85%;
+	}
+
+	.bio {
+		width: 100%;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.skillspicture {
+		overflow: scroll;
+	}
+}
+
+/* iPhone X */
+@media only screen 
+	and (min-device-width: 375px)
+	and (max-device-width: 812px)
+	and (-webkit-min-device-pixel-ratio: 3){
+		.bio {
+			width: 95%;
+		}
+
+		.about-container {
+			background: #006574
+		}
+	}
+
+/* iPhone 5, 5S, 5C, and 5SE */
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 568px)
+	and (-webkit-min-device-pixel-ratio: 2){
+		.about-container{
+			background: #006574;
+			text-align: center;
+		}
+
+		li {
+			margin-right: 60px;
+		}
+
+		h1 {
+			margin-right: 60px;
+		}
+
+		h2 {
+			margin-right: 60px;
+		}
+
+		.line {
+			margin-left: 140px;
+		}
+
+		.bio {
+			width: 80%;
+		}
+
+		.me {
+			margin-right: 75px;
+		}
+	}
+
+/*iPhone 6, 6S, 7, and 8 */
+@media only screen
+	and (min-device-width: 375px)
+	and (max-device-width: 667px)
+	and (-webkit-min-device-pixel-ratio: 2){
+		.about-container{
+			background: #006574;
+		}
+		.me {
+			margin-left: 45px;
+		}
+
+		.bio {
+			margin-left: 30px;
+		}
+
+		.line {
+			margin-right: 2px;
+			margin-left: 162px;
+		}
+
+		h1 {
+			margin-left: 40px;
+		}
+
+		h2 {
+			margin-left: 45px;
+		}
+
+		li {
+			margin-right: 75px;
+		}
+	}
+
+/*iPhone 6+, 7+, and 8+ */
+@media only screen
+	and (min-device-width: 414px)
+	and (max-device-width: 736px)
+	and (-webkit-min-device-pixel-ratio: 3){
+		.about-container{
+			background: #006574;
+		}
+
+		.me {
+			margin-left: 70px;
+		}
+
+		h1 {
+			margin-left: 65px;
+		}
+
+		h2 {
+			margin-left: 65px;
+		}
+
+		.line {
+			margin-right: 100px;
+			margin-left: 174px
+		}
+
+		.bio {
+			margin-left: 40px;
+		}
+	}
+
+
+
+
+

@@ -1,0 +1,307 @@
+<html>
+
+	<head>
+  	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
+  	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+  	<link 
+  		rel="stylesheet"
+  		href="prism-atom-dark.css"
+  		type="text/css"
+  		media="screen"
+  	/>
+
+  	<script type="text/javascript" src="prism.js"></script>
+  	<script type="text/javascript" src="prism.ruby.js"></script>
+
+  	<title>Zoe Kramer</title>
+  	<meta name="description" content="Full-Stack Web Developer with a background in Music on a never-ending mission to learn, grow, and spark creativity in others.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	</head>
+
+<body>
+	<div class="about-container">
+		<ul>
+			<li><a href="#" class="nav-link">About</a></li>
+			<li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+			<li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+			<li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+			<li class="hire-me"><a href="#hire-me" class="nav-link">Hire Me</a></li>
+		</ul>
+
+		<div class="about">
+			<img src="assets/images/me.jpg" class="me" />
+
+			<h1>Zoe Kramer</h1>
+
+			<h2>FULL-STACK WEB DEVELOPER</h2>
+
+			<hr class="line" />
+			<p class="bio">
+				Full-Stack Web Developer with a background in Music on a never-ending mission to learn, grow, and spark creativity in others.  		
+			</p>
+		</div>
+	</div>
+
+	<h3 id="code-samples">Code Snippets</h3>
+	<hr class="line2">
+
+  <div class="code-row">
+  	<div class="box code-description">
+  		<h4>Temperature Conversion</h4>
+  		<p>
+  			This Ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.
+  		</p>
+  	</div>
+
+  	<div class="box code-code">
+      <pre><code class="language-ruby">
+      def fahrenheit(n)
+          return (n * 9/5) + 32
+      end
+
+
+      puts &quot;Enter degrees in Celsius&quot;
+      Celsius = gets.chomp
+
+      Var1 = Celsius
+      Var2 = Var1.to_f
+      Fahrenheit = fahrenheit(Var2)
+
+      reply = &quot;#{Var2} degrees Celsius is
+              #{Fahrenheit} degrees Fahrenheit&quot;
+      puts reply
+    </code></pre>
+    </div>
+  </div>
+
+  <br class="clear" />
+
+  <div class="box">
+    <h4>Ordinal Challenge</h4>
+    <p>
+      This Ruby program will convert a plain number to the ordinal of the number. For example, if the user enters 2, it will display 2nd, if the user enters 3, it will display 3rd, etc.
+    </p>
+  </div>
+
+	<div class="box">
+    <pre><code class="language-ruby">
+    def suffix (number)
+        right_most_digit = number % 10
+        
+        if right_most_digit == 1 &amp;&amp; number != 11
+            return &quot;st&quot;    
+        elsif right_most_digit == 2 &amp;&amp; number != 12
+            return &quot;nd&quot;
+        elsif right_most_digit == 3 &amp;&amp; number != 13
+            return &quot;rd&quot;
+        else
+            return &quot;th&quot;
+        end
+        
+    end
+
+    puts &quot;Enter a number&quot;
+    number = gets.chomp.to_i
+
+    puts &quot;That's the #{number}#{suffix(number)} item!&quot;
+  </code></pre>
+	</div>
+
+	<br class="clear" />
+
+  
+	<div class="box">
+		<h4>Foobar</h4>
+		<p>
+			This Ruby program is an adaption of a classic technical interview problem which displays sequences of the Foobar pattern.
+		</p>
+	</div>
+
+	<div class="box">
+    <pre><code class="language-ruby">
+    def foobar(number)
+        number_divisible_by_5 = number % 5
+        number_divisible_by_3 = number % 3
+        
+        if number_divisible_by_5 == 0 &amp;&amp; 
+           number_divisible_by_3 == 0
+            return &quot;Foobar&quot;
+        elsif number_divisible_by_5 == 0
+            return &quot;Bar&quot; 
+        elsif number_divisible_by_3 == 0
+            return &quot;Foo&quot;
+        else
+            return number
+        end
+    end
+
+    puts &quot;How many items do you want to see?&quot;
+    number = gets.chomp.to_i
+
+    current = 1
+
+    while current &lt;= number
+        puts &quot;#{foobar(current)}&quot;
+        current = current + 1
+    end
+  </code></pre>
+	</div>
+
+	<br class="clear" />
+
+  <div class="web-apps-container">
+  	<h3 id="web-apps">Web Apps</h3>
+  	<hr class="line2" />
+
+  	<div class="box">
+  		<h4>Quote Generator</h4>
+      <a href="https://splurty-zoe-kramer.herokuapp.com/">
+  		  <img src="assets/images/splurty.png" class="full-width" />
+      </a>
+  		<p>
+  			A database-powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses Git and Github for version control, and launched on Heroku.
+  		</p>
+      <p>
+        <a href="https://github.com/ZoeBKramer/splurty" class="githublink"> Source Code
+        </a>
+      </p>
+    </div>
+
+    <div class="box">
+      <h4>Yelp Clone</h4>
+      <a href="https://nomster-zoe-kramer.herokuapp.com/">
+        <img src="assets/images/nomster.png" class="full-width" />
+      </a>
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+      </p>
+      <p>
+        <a href="https://github.com/ZoeBKramer/nomster" class="githublink"> Source Code
+        </a>
+      </p>
+    </div>
+
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Two-Sided Market Place</h4>
+      <a href="https://flixter-zoe-kramer.herokuapp.com/">
+        <img src="assets/images/flixter.png" class="full-width" />
+      </a>
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+      </p>
+      <p>
+        <a href="https://github.com/ZoeBKramer/flixter" class="githublink"> Source Code
+        </a>
+      </p>
+    </div>
+
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <a href="https://grammable-zoe-kramer.herokuapp.com/">
+        <img src="assets/images/grammable.png" class="full-width" />
+      </a>
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+      </p>
+      <p>
+        <a href="https://github.com/ZoeBKramer/grammable" class="githublink"> Source Code
+        </a>
+      </p>
+    </div>
+
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Single Page Todo Application</h4>
+      <a href="https://todoster-zoe-kramer.herokuapp.com/">
+        <img src="assets/images/todoster.png" class="full-width" />
+      </a>
+      <p>
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+      </p>
+      <p>
+        <a href="https://github.com/ZoeBKramer/todo" class="githublink"> Source Code
+        </a>
+      </p>
+    </div>
+
+    <div class="box">
+      <h4>Agile Team Project</h4>
+      <img src="assets/images/chess.png" class="full-width" />
+      <p>
+        Worked on an Agile software development team building
+        a chess application. Under the guidance of a senior software engineer,
+        we had weekly Agile team meetings for code reviews, sprint planning,
+        and feature assignments.
+      </p>
+    </div>
+
+    <br class="clear" />
+  </div>
+
+  <div class="skills">
+    <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+    <hr class="line2" />
+    <p class="skills-and-tools">
+      Zoe has developed proficiency and expertise
+      in the following programming languages and
+      comfort with the following tools:
+    </p>
+
+    <div class="icons">
+    	<img src="assets/images/github.png" class="icon" />
+    	<img src="assets/images/rubocop.png" class="icon"/>
+    	<img src="assets/images/trello.png" class="icon"/>
+    	<img src="assets/images/slack.png" class="icon"/>
+    	<img src="assets/images/codeship.png" class="icon"/>
+
+    	<br class="clear" />
+
+      <div class="skillspicture">
+    	 <img src="assets/images/skills.png" />
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contact-me" id="hire-me">
+  	<h3 class="contact-headline">Contact</h3>
+  	<hr class="line2" />
+  	<p class="contact-info">
+  		Currently entertaining new opportunities.
+  		Please get in touch via email:
+  	</p>
+
+  	<p>
+  		<a href="mailto:zoebkramer@gmail.com" class="contact-link"> zoebkramer@gmail.com
+  		</a>
+  	</p>
+    <p class="contact-info">
+      Social
+    </p>
+
+    <p>
+      <a href="https://github.com/ZoeBKramer" class="contact-link"> Github
+      </a>
+      <a href="https://www.linkedin.com/in/zoe-kramer-a68640162/" class="contact-link"> LinkedIn
+      </a>
+    </p>
+  </div>
+
+</body>
+ 
+</html>
